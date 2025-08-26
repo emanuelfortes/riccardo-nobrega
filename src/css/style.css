@@ -1,0 +1,266 @@
+/* font-family: "Teko", sans-serif; */
+/* font-family: "Oswald", sans-serif; */
+/* font-family: "Anton", sans-serif; */
+/* font-family: "Roboto", sans-serif; */
+/* font-family: "Zen Dots", sans-serif; */
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url(../img/background.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+main {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  background-color: rgba(6, 12, 31, 0.829);
+  .logo {
+    font-family: "Zen Dots", sans-serif;
+    letter-spacing: 1.4px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    img {
+      border-radius: 35px;
+      background-color: aliceblue;
+    }
+  }
+}
+header {
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(6, 12, 31);
+  width: 100%;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 12px;
+  gap: 70px;
+
+  img {
+    width: 85px;
+  }
+  ul {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    display: flex;
+    gap: 40px;
+  }
+}
+.home {
+  margin: 0 auto;
+  width: 100%;
+  height: 110vh;
+  max-width: 1440px;
+  font-family: "Michroma", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  img {
+    width: 42%;
+  }
+  .text-home {
+    width: 50%;
+    font-size: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    span {
+      font-family: "Zen Dots", sans-serif;
+      font-size: 28px;
+      color: rgba(66, 110, 245, 0.986);
+    }
+  }
+  .cuida-papai {
+    color: rgba(66, 110, 245, 0.986);
+    font-size: 28px;
+    background-color: aliceblue;
+    font-weight: 700;
+    margin: 30px auto 0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s ease-in-out;
+  }
+  .cuida-papai:hover {
+    background-color: rgba(66, 110, 245, 0.986);
+    color: aliceblue;
+  }
+}
+.background-generi {
+  width: 100%;
+  background: url(../img/camuflado.jpg) center center no-repeat;
+  background-size: cover;
+}
+.curso {
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .title-curso {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 24px;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+  }
+  p {
+    font-family: "Michroma", sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.grid-detalhes {
+  display: flex;
+  gap: 20px;
+}
+.detalhes {
+  background-color: rgba(4, 17, 56, 0.986);
+  width: 350px;
+  height: 450px;
+  padding: 7px;
+  border-radius: 35px;
+  font-family: "Zen Dots", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
+.background-missao {
+  color: black;
+}
+
+.missao {
+  color: aliceblue;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  width: 100%;
+  height: 70vh;
+  max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .missao-layout {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 120px;
+  }
+  .infor-missao {
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+  }
+  .img-missao {
+    background-color: rgba(66, 110, 245, 0.986);
+    width: 360px;
+    height: 360px;
+    padding: 12px;
+    border-radius: 25px;
+    img {
+      width: 100%;
+    }
+  }
+  h2 {
+    font-family: "Zen Dots", sans-serif;
+    font-size: 45px;
+    margin: 40px;
+  }
+  p {
+    font-family: "Michroma", sans-serif;
+    font-size: 24px;
+    margin: 12px 0;
+  }
+}
+.treinamento {
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .detalhes {
+    background-color: rgba(4, 17, 56, 0.986);
+    width: 400px;
+    height: 500px;
+    padding: 12px;
+    border-radius: 35px;
+    font-family: "Zen Dots", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    img {
+      width: 250px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+  .chamada-acao{
+    color: rgb(0, 119, 223);
+    font-family: "Michroma", sans-serif;
+    font-size: 28px;
+    background-color: rgb(255, 255, 255);
+    font-weight: 700;
+    margin: 30px auto 0;
+    text-align: center;
+    border-radius: 15px;
+    padding: 20px 200px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transition: 0.5s ease-in-out;
+  }
+  .chamada-acao:hover {
+    background-color: rgba(66, 110, 245, 0.986);
+    color: aliceblue;
+  }
+  h2 {
+    text-align: center;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 45px;
+    margin: 40px;
+  }
+  .defalt-curso {
+    background-color: darkgrey;
+  }
+}
