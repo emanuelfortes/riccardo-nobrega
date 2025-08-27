@@ -264,3 +264,29 @@ header {
     background-color: darkgrey;
   }
 }
+footer{
+  background-color: rgba(4, 17, 56, 0.986);
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Michroma", sans-serif;
+  
+  h2{
+    font-size: 15px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  p{
+    font-size: 15px;
+  }
+  .nord-dev{
+    color: darkorange;
+  }
+  i{
+    font-size: 30px;
+    margin: 0px 5px ;
+  }
+}
