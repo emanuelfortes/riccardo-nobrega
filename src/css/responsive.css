@@ -113,3 +113,72 @@
     }
   }
 }
+@media (max-width: 750px) {
+  .home {
+    margin: 0 auto 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+
+    img {
+      margin-top: 110px;
+      width: 60%;
+    }
+    .text-home {
+      width: 90%;
+      font-size: 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      span {
+        font-size: 19px;
+      }
+    }
+    .cuida-papai {
+      font-size: 17px;
+      padding: 17px 70px;
+      margin-bottom: 80px;
+    }
+  }
+  .curso {
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+    gap: 50px;
+    .title-curso {
+      width: 100%;
+      max-width: 900px;
+      gap: 30px;
+      h2 {
+        font-size: 15px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+  .grid-detalhes {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+  }
+  .doble-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .detalhes {
+    background-color: rgba(4, 17, 56, 0.986);
+    margin: 0 auto;
+    width: 85%;
+    height: 250px;
+    padding: 7px;
+    img {
+      width: 150px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
