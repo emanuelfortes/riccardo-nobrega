@@ -1,5 +1,85 @@
-@media (max-width: 1024px){
-  
+@media (max-width: 1440px) {
+  .home {
+    justify-content: center;
+    gap: 35px;
+    img {
+      width: 34%;
+    }
+    .text-home {
+      width: 45%;
+      font-size: 19px;
+      display: flex;
+      flex-direction: column;
+      gap: 17px;
+
+      span {
+        font-size: 25px;
+      }
+    }
+    .cuida-papai {
+      padding: 20px 170px;
+    }
+  }
+  .curso {
+  width: 100%;
+  height: 100vh;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+
+  .title-curso {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  h2 {
+    font-size: 24px;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+  }
+  p {
+    font-family: "Michroma", sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+}
+.grid-detalhes {
+  display: flex;
+  gap: 20px;
+}
+.doble-grid{
+  display: flex;
+  gap: 30px;
+}
+.detalhes {
+  background-color: rgba(4, 17, 56, 0.986);
+  width: 320px;
+  height: 420px;
+  padding: 7px;
+  border-radius: 35px;
+  font-family: "Zen Dots", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  img {
+    width: 250px;
+    margin-bottom: 20px;
+  }
+  p {
+    font-size: 22px;
+  }
+}
 }
 @media (max-width: 1024px) {
   .home {
