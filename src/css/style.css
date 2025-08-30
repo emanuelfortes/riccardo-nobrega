@@ -219,6 +219,7 @@ header {
   gap: 20px;
 
   .detalhes {
+    color:#ffff;
     background-color: rgba(4, 17, 56, 0.986);
     width: 400px;
     height: 500px;
