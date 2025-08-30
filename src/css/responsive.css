@@ -38,13 +38,13 @@
     margin-bottom: 30px;
   }
   h2 {
-    font-size: 24px;
+    font-size: 22px;
     font-family: "Michroma", sans-serif;
     text-align: center;
   }
   p {
     font-family: "Michroma", sans-serif;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
   }
 }
@@ -58,8 +58,8 @@
 }
 .detalhes {
   background-color: rgba(4, 17, 56, 0.986);
-  width: 320px;
-  height: 420px;
+  width: 280px;
+  height: 380px;
   padding: 7px;
   border-radius: 35px;
   font-family: "Zen Dots", sans-serif;
@@ -71,11 +71,11 @@
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
   img {
-    width: 250px;
+    width: 200px;
     margin-bottom: 20px;
   }
   p {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 }
