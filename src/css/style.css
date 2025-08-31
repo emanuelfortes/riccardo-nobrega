@@ -75,32 +75,11 @@ header {
       color: rgba(66, 110, 245, 0.986);
     }
   }
-  .cuida-papai {
-    color: rgba(66, 110, 245, 0.986);
-    font-size: 28px;
-    background-color: aliceblue;
-    font-weight: 700;
-    margin: 30px auto 0;
-    text-align: center;
-    border-radius: 15px;
-    padding: 20px 200px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: 0.5s ease-in-out;
-  }
-  .cuida-papai:hover {
-    background-color: rgba(66, 110, 245, 0.986);
-    color: aliceblue;
-  }
 }
-.background-generi {
+.treinamento {
+  padding: 50px;
   width: 100%;
-  background: url(../img/camuflado.jpg) center center no-repeat;
-  background-size: cover;
-}
-.curso {
-  width: 100%;
-  height: 100vh;
+  height: 100%;
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
@@ -109,30 +88,48 @@ header {
   flex-direction: column;
   gap: 20px;
 
-  .title-curso {
-    width: 100%;
-    max-width: 900px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    margin-bottom: 30px;
+  .lex-papa {
+    width: 400px;
+    border-radius: 35px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(146, 133, 133);
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transition: 0.5s ease-in-out;
   }
-  h2 {
-    font-size: 24px;
-    font-family: "Michroma", sans-serif;
+  .lex-papa:hover {
+    border-color: rgb(226, 191, 37);
+  }
+  .lex-papa-cursos{
     text-align: center;
+    p{
+      font-family: "Zen Dots", sans-serif;
+      font-size: 24px;
+    }
   }
   p {
     font-family: "Michroma", sans-serif;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 20px;
+  }
+  h2 {
     text-align: center;
+    font-family: "Zen Dots", sans-serif;
+    font-size: 45px;
+    margin: 40px;
   }
 }
+.background-generi {
+  width: 100%;
+  background: url(../img/camuflado.jpg) center center no-repeat;
+  background-size: cover;
+}
+
 .grid-detalhes {
   display: flex;
   gap: 20px;
 }
-.doble-grid{
+.doble-grid {
   display: flex;
   gap: 30px;
 }
@@ -207,7 +204,8 @@ header {
     margin: 12px 0;
   }
 }
-.treinamento {
+
+.curso {
   width: 100%;
   height: 100vh;
   max-width: 1440px;
@@ -218,31 +216,25 @@ header {
   flex-direction: column;
   gap: 20px;
 
-  .detalhes {
-    color:#ffff;
-    background-color: rgba(4, 17, 56, 0.986);
-    width: 400px;
-    height: 500px;
-    padding: 12px;
-    border-radius: 35px;
-    font-family: "Michroma", sans-serif;
-    font-weight: 700;
+  .title-curso {
+    width: 100%;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    img {
-      width: 250px;
-      margin-bottom: 20px;
-    }
-    p {
-      font-size: 18px;
-    }
+    gap: 30px;
+    margin-bottom: 30px;
   }
-  .chamada-acao{
+  h2 {
+    font-size: 24px;
+    font-family: "Michroma", sans-serif;
+    text-align: center;
+  }
+  p {
+    font-family: "Michroma", sans-serif;
+    font-size: 22px;
+    text-align: center;
+  }
+  .chamada-acao {
     color: rgb(0, 119, 223);
     font-family: "Michroma", sans-serif;
     font-size: 28px;
@@ -260,17 +252,8 @@ header {
     background-color: rgba(66, 110, 245, 0.986);
     color: aliceblue;
   }
-  h2 {
-    text-align: center;
-    font-family: "Zen Dots", sans-serif;
-    font-size: 45px;
-    margin: 40px;
-  }
-  .defalt-curso {
-    background-color: darkgrey;
-  }
 }
-footer{
+footer {
   background-color: rgba(4, 17, 56, 0.986);
   padding: 40px;
   display: flex;
@@ -278,22 +261,22 @@ footer{
   justify-content: center;
   gap: 50px;
   font-family: "Michroma", sans-serif;
-  
-  h2{
+
+  h2 {
     font-size: 15px;
   }
-  h3{
+  h3 {
     font-size: 15px;
   }
-  p{
+  p {
     font-size: 15px;
   }
-  .nord-dev{
+  .nord-dev {
     color: darkorange;
   }
-  i{
+  i {
     color: aliceblue;
     font-size: 30px;
-    margin: 0px 5px ;
+    margin: 0px 5px;
   }
 }
