@@ -100,9 +100,9 @@ header {
   .lex-papa:hover {
     border-color: rgb(226, 191, 37);
   }
-  .lex-papa-cursos{
+  .lex-papa-cursos {
     text-align: center;
-    p{
+    p {
       font-family: "Zen Dots", sans-serif;
       font-size: 24px;
     }
@@ -162,7 +162,8 @@ header {
 .missao {
   color: aliceblue;
   margin: 0 auto;
-  padding-bottom: 50px;
+  padding: 4%;
+  /* padding-bottom: 50px; */
   width: 100%;
   height: 70vh;
   max-width: 1440px;
@@ -185,8 +186,10 @@ header {
   }
   .img-missao {
     background-color: rgba(66, 110, 245, 0.986);
-    width: 360px;
-    height: 360px;
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
     padding: 12px;
     border-radius: 25px;
     img {
