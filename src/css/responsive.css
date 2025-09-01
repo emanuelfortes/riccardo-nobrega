@@ -127,9 +127,9 @@
       }
     }
     .chamada-acao {
-        font-size: 22px;
-        padding: 20px 100px;
-      }
+      font-size: 22px;
+      padding: 20px 100px;
+    }
   }
   .doble-grid {
     display: flex;
@@ -217,6 +217,26 @@
   }
 }
 @media (max-width: 750px) {
+  header {
+  width: 100%;
+  padding: 10px 40px;
+  flex-direction: column;
+  font-size: 12px;
+  gap: 20px;
+
+  img {
+    width: 60px;
+  }
+  ul {
+    font-family: "Oswald", sans-serif;
+    font-size: 19px;
+    display: flex;
+    gap: 10px;
+  }
+  li{
+    margin: 5px;
+  }
+}
   .home {
     margin: 0 auto 50px;
     width: 100%;
@@ -224,7 +244,7 @@
     flex-direction: column;
 
     img {
-      margin-top: 110px;
+      margin-top: 150px;
       width: 60%;
     }
     .text-home {
@@ -302,17 +322,17 @@
       }
     }
     .chamada-acao {
-    font-size: 18px;
-    background-color: rgb(255, 255, 255);
-    font-weight: 700;
-    margin: 30px auto 0;
-    text-align: center;
-    border-radius: 15px;
-    padding: 10px 25px;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-      rgba(0, 0, 0, 0.22) 0px 15px 12px;
-    transition: 0.5s ease-in-out;
-  }
+      font-size: 18px;
+      background-color: rgb(255, 255, 255);
+      font-weight: 700;
+      margin: 30px auto 0;
+      text-align: center;
+      border-radius: 15px;
+      padding: 10px 25px;
+      box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+        rgba(0, 0, 0, 0.22) 0px 15px 12px;
+      transition: 0.5s ease-in-out;
+    }
   }
   .grid-detalhes {
     display: flex;
@@ -324,7 +344,7 @@
     flex-direction: column;
     gap: 30px;
   }
-   
+
   .detalhes {
     background-color: rgba(4, 17, 56, 0.986);
     margin: 0 auto;
@@ -340,24 +360,23 @@
     }
   }
   footer {
-  text-align: center;
-  padding: 40px;
-  flex-direction: column;
-  gap: 50px;
-  h2 {
-    font-size: 12px;
+    text-align: center;
+    padding: 40px;
+    flex-direction: column;
+    gap: 50px;
+    h2 {
+      font-size: 12px;
+    }
+    h3 {
+      font-size: 12px;
+    }
+    .nord-dev {
+      color: darkorange;
+    }
+    i {
+      color: aliceblue;
+      font-size: 40px;
+      margin: 0px 5px;
+    }
   }
-  h3 {
-    font-size: 12px;
-  }
-  .nord-dev {
-    color: darkorange;
-  }
-  i {
-    color: aliceblue;
-    font-size: 40px;
-    margin: 0px 5px;
-  }
-}
-
 }
