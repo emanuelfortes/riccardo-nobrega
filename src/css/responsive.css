@@ -219,11 +219,16 @@
 @media (max-width: 750px) {
   header {
   width: 100%;
-  /* padding: 10px 40px; */
+  padding: 10px 10px;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-size: 12px;
   gap: 20px;
 
+  h1{
+    font-size: 15px;
+  }
   img {
     width: 60px;
   }
@@ -231,7 +236,9 @@
     font-family: "Oswald", sans-serif;
     font-size: 19px;
     display: flex;
-    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
   }
   li{
     margin: 5px;
