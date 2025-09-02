@@ -13,6 +13,30 @@
     <link rel="stylesheet" href="src/css/responsive.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Riccardo Nobrega</title>
+    <!-- <style>
+    /* Evita conflito com o smooth nativo */
+    html { scroll-behavior: auto !important; }
+
+    body { margin: 0; font-family: system-ui, Arial, sans-serif; }
+
+    header {
+      position: fixed; inset: 0 0 auto 0; height: 64px;
+      display: flex; align-items: center; gap: 20px;
+      padding: 0 20px; background: #111; color: #fff; z-index: 10;
+    }
+    header a { color: #fff; text-decoration: none; opacity: .9; }
+    header a:hover { opacity: 1; }
+
+    .spacer { height: 64px; } /* compensa o header fixo */
+
+    section {
+      min-height: 100vh; padding: 48px 24px;
+      display: grid; place-items: center; font-size: 2rem;
+    }
+    #home   { background: #e8f1ff; }
+    #curso  { background: #e9ffe8; }
+    #contato{ background: #ffe8e8; }
+  </style> -->
   </head>
   <body>
     <main>
@@ -23,14 +47,14 @@
         </div>
         <nav>
           <ul data-aos="fade-down" data-aos-duration="2000">
-            <li>Inicio</li>
-            <li>Curso</li>
-            <li>Missão</li>
-            <li>Treinamento</li>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#treinamento">Treinamento</a></li>
+            <li><a href="#missao">Missão</a></li>
+            <li><a href="#curso">Curso</a></li>
           </ul>
         </nav>
       </header>
-      <section class="home">
+      <section class="home" id="home">
         <img
           data-aos="zoom-in"
           data-aos-duration="2000"
@@ -54,50 +78,22 @@
         </div>
       </section>
       <section class="background-generi">
-        <div class="treinamento">
+        <div class="treinamento" id="treinamento">
           <h2>Garanta sua vaga no LEX PAPA</h2>
-          <a href="https://pay.kiwify.com.br/VD6c7em" target="_blank"><img class="lex-papa" src="src/img/lex-papa.jpg" alt="" /></a>
+          <a href="https://pay.kiwify.com.br/VD6c7em" target="_blank"
+            ><img class="lex-papa" src="src/img/lex-papa.jpg" alt=""
+          /></a>
           <div class="lex-papa-cursos">
-            <p>Legislação Extravagante </p>
+            <p>Legislação Extravagante</p>
             <p>Direito Penal</p>
             <p>Processo Penal</p>
           </div>
           <p>Faça parte do time!</p>
           <p>R$ 65,00 – acesso por 6 meses</p>
-          <!-- <div class="grid-detalhes">
-            <a href="https://pay.kiwify.com.br/VD6c7em" target="_blank">
-              <div
-                class="detalhes"
-                data-aos="fade-down"
-                data-aos-duration="1000"
-              >
-                <img src="src/img/legislação.png" alt="" />
-                <p>Faça parte do time!</p>
-                <p>R$ 45,00 – acesso por 7 dias</p>
-                <p>R$ 65,00 – acesso por 6 meses</p>
-              </div>
-            </a>
-            <div
-              class="detalhes defalt-curso"
-              data-aos="fade-down"
-              data-aos-duration="1500"
-            >
-              <img src="src/img/direito.png" alt="" />
-              <p>Aguardem...</p>
-            </div>
-            <div
-              class="detalhes defalt-curso"
-              data-aos="fade-down"
-              data-aos-duration="2000"
-            >
-              <img src="src/img/processo.png" alt="" />
-              <p>Aguardem...</p>
-            </div>
-          </div> -->
         </div>
       </section>
       <section class="background-missao">
-        <div class="missao">
+        <div class="missao" id="missao">
           <h2>O propósito é simples: Aprovação.</h2>
           <div class="missao-layout">
             <div class="infor-missao">
@@ -119,7 +115,7 @@
         </div>
       </section>
       <section class="background-generi">
-        <div class="curso">
+        <div class="curso" id="curso">
           <div class="title-curso">
             <h2>O Lex Papa traz uma metodologia objetiva e didática.</h2>
             <p>
@@ -185,11 +181,47 @@
         </div>
       </footer>
     </main>
+
     <script
       src="https://kit.fontawesome.com/cce7add4ba.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/lenis@1.3.11/dist/lenis.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      // 1) Inicializa o Lenis
+      const lenis = new Lenis({
+        // Ajuste fino opcional:
+        duration: 1.2, // velocidade geral da animação
+        smoothWheel: true, // suaviza rolagem do mouse
+        smoothTouch: true, // suaviza no touch
+      });
+
+      // 2) Loop de animação do Lenis
+      function raf(time) {
+        lenis.raf(time);
+        requestAnimationFrame(raf);
+      }
+      requestAnimationFrame(raf);
+
+      // 3) Scroll suave em âncoras do tipo href="#..."
+      const header = document.querySelector("header");
+      const headerHeight = header ? header.offsetHeight : 0;
+
+      document.querySelectorAll('a[href^="#"]').forEach((link) => {
+        link.addEventListener("click", (e) => {
+          const targetId = link.getAttribute("href");
+          const targetEl = document.querySelector(targetId);
+          if (!targetEl) return; // se não achar a seção, segue normal
+
+          e.preventDefault();
+          lenis.scrollTo(targetEl, { offset: -headerHeight });
+
+          // Atualiza a URL sem “pular” a página
+          history.pushState(null, "", targetId);
+        });
+      });
+    </script>
     <script>
       AOS.init();
     </script>
