@@ -188,7 +188,7 @@ header {
     flex-direction: column;
   }
   .img-missao {
-    background-color: rgba(66, 110, 245, 0.986);
+    filter: drop-shadow(0 0 30px rgb(0, 0, 0));
     max-width: 360px;
     max-height: 360px;
     width: 100%;
