@@ -313,6 +313,11 @@
       font-size: 15px;
     }
   }
+  .link-curso{
+  font-size: 18px;
+  padding: 10px 21px;
+  border-radius: 10px;
+}
   .curso {
     width: 100%;
     height: 100%;
