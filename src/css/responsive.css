@@ -218,32 +218,32 @@
 }
 @media (max-width: 750px) {
   header {
-  width: 100%;
-  padding: 10px 10px;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  gap: 20px;
-
-  h1{
-    font-size: 15px;
-  }
-  img {
-    width: 60px;
-  }
-  ul {
-    font-family: "Oswald", sans-serif;
-    font-size: 19px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px;
+    flex-direction: column;
     align-items: center;
-    gap: 30px;
+    justify-content: center;
+    font-size: 12px;
+    gap: 20px;
+
+    h1 {
+      font-size: 15px;
+    }
+    img {
+      width: 60px;
+    }
+    ul {
+      font-family: "Oswald", sans-serif;
+      font-size: 19px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+    li {
+      margin: 5px;
+    }
   }
-  li{
-    margin: 5px;
-  }
-}
   .home {
     margin: 0 auto 50px;
     width: 100%;
@@ -268,7 +268,7 @@
   }
   .treinamento {
     .lex-papa {
-      width: 250px;
+      width: 300px;
     }
     .lex-papa-cursos {
       p {
@@ -283,6 +283,11 @@
       font-size: 28px;
       margin: 5px;
     }
+  }
+  .link-curso {
+    font-size: 20px;
+    padding: 10px 21px;
+    border-radius: 10px;
   }
   .missao {
     .missao-layout {
@@ -313,11 +318,7 @@
       font-size: 15px;
     }
   }
-  .link-curso{
-  font-size: 18px;
-  padding: 10px 21px;
-  border-radius: 10px;
-}
+
   .curso {
     width: 100%;
     height: 100%;
