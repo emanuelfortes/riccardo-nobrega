@@ -266,24 +266,31 @@
       }
     }
   }
-  .treinamento {
-    .lex-papa {
-      width: 300px;
-    }
-    .lex-papa-cursos {
+  .grid-lex-papa {
+    display: flex;
+    flex-direction: column;
+  }
+  .curso-lex {
+    .treinamento {
+      .lex-papa {
+        width: 250px;
+      }
+      .lex-papa-cursos {
+        p {
+          font-size: 19px;
+        }
+      }
       p {
-        font-size: 20px;
+        font-size: 15px;
+        text-align: center;
+      }
+      h2 {
+        font-size: 28px;
+        margin: 5px;
       }
     }
-    p {
-      font-size: 15px;
-      text-align: center;
-    }
-    h2 {
-      font-size: 28px;
-      margin: 5px;
-    }
   }
+
   .link-curso {
     font-size: 20px;
     padding: 10px 21px;
