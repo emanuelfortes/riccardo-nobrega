@@ -115,7 +115,7 @@ header {
   gap: 20px;
 
   .lex-papa{
-    width: 400px;
+    width: 290px;
     border-radius: 35px;
     border-style: solid;
     border-width: 5px;
@@ -129,7 +129,7 @@ header {
   p {
     font-family: "Michroma", sans-serif;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 17px;
   }
   .descrition{
     max-width: 600px;
@@ -227,7 +227,7 @@ header {
 .link-curso{
   color: rgb(6, 12, 31);
   font-family: "Michroma", sans-serif;
-  font-size: 30px;
+  font-size: 22px;
   font-weight: 700;
   text-align: center;
   background-color: rgb(255, 255, 255);
